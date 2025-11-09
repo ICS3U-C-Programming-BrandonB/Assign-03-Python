@@ -11,8 +11,8 @@ def main():
 
     # gets number of croissants from user
     item_count = input(
-            "Welcome to Brandon's Bakery! How many croissants would you like to order? "
-        )
+        "Welcome to Brandon's Bakery! How many croissants would you like to order? "
+    )
 
     # Checking if the user entered an integer correctly
     try:
