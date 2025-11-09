@@ -26,16 +26,16 @@ def main():
         total = subtotal + tax
 
         # determine whether or not the user has to pay tax
-        if item_count < 6:
+        if item_count >= 6:
             print(
-                "You need to order 6 or more croissants to not pay tax, your total is ${:.2f}".format(
-                    total
+                "You ordered 6 or more croissants, your total is ${:.2f}".format(
+                    subtotal
                 )
             )
         else:
             print(
-                "You ordered more than 6 croissants, you don't have to pay tax! Your Total is: ${:.2f}".format(
-                    subtotal
+                "You ordered less than 6 croissants, you have to pay tax! Your Total is: ${:.2f}".format(
+                    total
                 )
             )
     # exception handling, making sure user enters an integer
