@@ -22,7 +22,7 @@ def main():
 
         # calculate subtotal, tax, and total
         subtotal = item_count * constants.CROISSANT_PRICE
-        tax = subtotal * 0.13
+        tax = subtotal * constants.HST
         total = subtotal + tax
 
         # determine whether or not the user has to pay tax
