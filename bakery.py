@@ -10,11 +10,9 @@ import constants
 def main():
 
     # gets number of croissants from user
-    item_count = int(
-        input(
+    item_count = input(
             "Welcome to Brandon's Bakery! How many croissants would you like to order? "
         )
-    )
 
     # Checking if the user entered an integer correctly
     try:
@@ -30,7 +28,7 @@ def main():
         # determine whether or not the user has to pay tax
         if item_count < 6:
             print(
-                "You need to order 6 croissants to not pay tax, your subtotal is ${:.2f}".format(
+                "You need to order 6 or more croissants to not pay tax, your total is ${:.2f}".format(
                     total
                 )
             )
@@ -43,8 +41,6 @@ def main():
     # exception handling, making sure user enters an integer
     except ValueError:
         print("Please Enter a Valid Integer")
-    finally:
-        print("Thank you for your order!")
 
 
 # outputs the function
